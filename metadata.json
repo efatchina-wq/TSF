@@ -1,0 +1,6 @@
+{
+  "name": "Talents Sans Frontières — TSF",
+  "description": "Portail digital institutionnel de Talents Sans Frontières (TSF) — Infrastructure panafricaine de détection, développement, certification et propulsion des talents.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

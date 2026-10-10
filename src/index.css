@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@theme {
+  /* TSF OFFICIAL BRAND PALETTE */
+  --color-tsf-primary: #0070C0;
+  --color-tsf-primary-50: #EBF5FC;
+  --color-tsf-primary-100: #D1E8F8;
+  --color-tsf-primary-200: #A3D1F1;
+  --color-tsf-primary-300: #6AB4E8;
+  --color-tsf-primary-400: #3397DE;
+  --color-tsf-primary-500: #0070C0;
+  --color-tsf-primary-600: #005FA3;
+  --color-tsf-primary-700: #004D85;
+  --color-tsf-primary-800: #003B66;
+  --color-tsf-primary-900: #002947;
+
+  --color-tsf-accent: #FF6600;
+  --color-tsf-accent-50: #FFF3EB;
+  --color-tsf-accent-100: #FFE4D1;
+  --color-tsf-accent-200: #FFC49E;
+  --color-tsf-accent-300: #FFA066;
+  --color-tsf-accent-400: #FF8033;
+  --color-tsf-accent-500: #FF6600;
+  --color-tsf-accent-600: #E65500;
+  --color-tsf-accent-700: #BF4400;
+  --color-tsf-accent-800: #993300;
+  --color-tsf-accent-900: #732400;
+
+  --color-tsf-charcoal: #404040;
+  --color-tsf-charcoal-50: #F5F5F7;
+  --color-tsf-charcoal-100: #EBEBEB;
+  --color-tsf-charcoal-200: #D6D6D6;
+  --color-tsf-charcoal-300: #B8B8B8;
+  --color-tsf-charcoal-400: #7D7D7D;
+  --color-tsf-charcoal-500: #404040;
+  --color-tsf-charcoal-600: #333333;
+  --color-tsf-charcoal-700: #262626;
+  --color-tsf-charcoal-800: #1A1A1A;
+  --color-tsf-charcoal-900: #121212;
+
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  :root {
+    --tsf-blue: #0070C0;
+    --tsf-orange: #FF6600;
+    --tsf-charcoal: #404040;
+    --tsf-white: #FFFFFF;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #404040;
+    background-color: #FAFAFA;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  html {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  h1, h2, h3, .font-display {
+    letter-spacing: -0.02em;
+    color: #404040;
+  }
+
+  /* Accessible focus ring */
+  *:focus-visible {
+    outline: 2px solid #0070C0;
+    outline-offset: 2px;
+  }
+
+  /* Selection highlight using brand blue */
+  ::selection {
+    background-color: #0070C0;
+    color: #FFFFFF;
+  }
+}
+
+/* Tabular numerals utility for tables and metrics */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Hide scrollbar for clean horizontal swipes */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Subtle architectural scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F5F7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D6D6D6;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B8B8B8;
+}
